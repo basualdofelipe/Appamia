@@ -1,0 +1,135 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 30%;
+}
+
+form fieldset {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+form fieldset .legajo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-transform: translatex(-4mm);
+          transform: translatex(-4mm);
+}
+
+form fieldset .legajo label {
+  padding: 0 0 0 10px;
+}
+
+form input {
+  margin: 0 0 15px 15px;
+}
+
+.inscripcion {
+  max-height: 297mm;
+  width: 180mm;
+  padding: 10mm;
+}
+
+.inscripcion h1 {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  margin: 10mm;
+  text-decoration: underline;
+}
+
+.inscripcion h2 {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: end;
+}
+
+.inscripcion h3 {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.inscripcion h4 {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.inscripcion p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+
+.inscripcion .data {
+  margin-top: 15mm;
+}
+
+.inscripcion .firma {
+  margin: 20mm 30mm 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.inscripcion .firma div {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10mm;
+  -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.inscripcion .firma div p {
+  margin: 0;
+}
+
+.inscripcion hr {
+  border-top: 2px dashed;
+}
+
+.inscripcion .datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+}
+
+.inscripcion .datos img {
+  max-width: 200px;
+}
+
+.inscripcion .datos p {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
