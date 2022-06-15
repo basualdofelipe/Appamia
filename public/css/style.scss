@@ -18,17 +18,27 @@ form{
             }
         }
     }
+    input, textarea{
+        margin: 0 0 15px 15px;
+    }
+    textarea{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 15px;
+    }
+    
 }
 
-form input{
-    margin: 0 0 15px 15px;
+#element-to-print{
+    max-width: 180mm;
 }
 
 .inscripcion{
     max-height: 297mm;
     width: 180mm;
     // border-style: solid;
-    padding: 10mm;
+    padding: 10mm 10mm 5mm 10mm;
+    
 
     h1{
         font-family: 'Arial Narrow', Arial, sans-serif;

@@ -10,19 +10,6 @@
 </head>
 <body>
     <main>
-        <!-- Crear un formulario con los siguientes datos
-        Nombre completo
-        Fecha nacimiento
-        DNI
-        CUOT o CUIL
-        Legajo n°
-        Domicilio particular -> Localidad -> Telefono
-        Domicilio Profesional -> Localidad -> Telefono
-        Celular
-        Matricula
-        Presenta servicio como...en...
-        -->
-
         <form action="/public/inscripcion.html" id="form" target="_blank">
             <fieldset id="datos-personales">
                 <label for="fname">Nombre:</label>
@@ -71,11 +58,15 @@
                 <label for="tel-l">Teléfono:</label>
                 <input type="tel" id="tel-l" name="tel-l">
             </fieldset>
-                <input type="submit" value="Submit">
+            <fieldset>
+                <label for="serv">Presta servicio como:</label>
+                <textarea type="text" id="serv" name="serv" rows="4" cols="50"></textarea>
+                <label for="serv-en">En:</label>
+                <input type="tel" id="serv-en" name="serv-en">
+            </fieldset>
+                <input type="submit" value="Submit"> 
         </form>
 
-
-          
     </main>
 </body>
 </html>

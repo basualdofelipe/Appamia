@@ -1,17 +1,18 @@
 //const legOsap = document.getElementsByName('legajo') // legajo o SAP
 //const legOsap = document.querySelectorAll('input[name="legajo"]:checked').value
 const form = document.querySelector("#forma")        //formulario
-//console.log(legOsap)
+const asd = document.querySelector("#asd")        //formulario
+console.log(asd.value)
 
 form.addEventListener("submit", e => {
-    let legOsap = document.querySelector('input[name="legajo"]:checked').value
+    //let legOsap = document.querySelector('input[name="legajo"]:checked').value
     let datos = {
-        legOsap: legOsap
+        asd: asd.value
     }
 
-    console.log(legOsap.value)
     let datosString = JSON.stringify(datos)
     localStorage.setItem("datos2",datosString)
+
 });
 
 

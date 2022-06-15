@@ -13,3 +13,5 @@ let opt = {
 function imprimir(){
     html2pdf().set(opt).from(element).save();
 }
+
+imprimir()
