@@ -1,0 +1,23 @@
+{
+  "name": "appamia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch src/scss:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basualdofelipe/Appamia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basualdofelipe/Appamia/issues"
+  },
+  "homepage": "https://github.com/basualdofelipe/Appamia#readme",
+  "devDependencies": {
+    "sass": "^1.52.3"
+  }
+}

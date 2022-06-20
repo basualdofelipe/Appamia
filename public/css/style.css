@@ -1,7 +1,14 @@
+#header-g {
+  background-color: blue;
+}
+#header-g img {
+  width: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: 0;
-          box-sizing: 0;
+  box-sizing: 0;
 }
+
 /*# sourceMappingURL=style.css.map */
