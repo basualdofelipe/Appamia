@@ -11,7 +11,9 @@ let opt = {
 
 // New Promise-based usage:
 function imprimir(){
-    html2pdf().set(opt).from(element).save();
+    html2pdf()
+    .set(opt)
+    .from(element)
+    .save();
 }
 
-imprimir()

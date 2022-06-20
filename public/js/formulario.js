@@ -22,7 +22,7 @@ const form = document.querySelector("#form")            //formulario
 
 
 
-form.addEventListener("submit", e => {
+form.addEventListener("submit", () => {
     let legOsap = document.querySelector('input[name="legajo"]:checked')
     let datos = {
         fname: fname.value,
