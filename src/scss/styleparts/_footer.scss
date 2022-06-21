@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+#footer-g{
+    background-color: $shade1;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40vh;
+    color: $shade5;
+    .titulo{
+        display: grid;
+        place-items: center;
+        img{
+            height: 10rem;
+        }
+        h3{
+            font-family: $subtitulo;
+            font-size: .8rem;
+        }
+    }
+    .datos{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        img{
+            place-self: end;
+            padding-right: 1rem;
+        }
+        a{
+            place-self: end;
+        }
+        p{
+            place-self: center start;
+        }
+    }
+}

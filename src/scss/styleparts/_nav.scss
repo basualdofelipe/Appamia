@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+#nav-g{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 90vw;
+    padding-left: 10vw;
+    background-color: $primary;
+    position: fixed;
+    
+
+    a{
+        text-decoration: none;
+        color: $shade5;
+        font-family: $subtitulo;
+        font-size: 0.75rem;
+    }
+    
+    img{
+        height: 80%;
+    }
+
+    #logo{
+        position: absolute;
+        height: 150%;
+        left: 1rem;
+        top: .1rem;
+        }
+
+    .redes{
+        display: flex;
+        height: inherit;
+        align-items: center;
+        img{
+            height: 50%;
+            margin: 10%;
+            background-color: #fff;
+            border-radius: 30%;
+        }
+    }
+}
