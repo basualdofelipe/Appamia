@@ -22,7 +22,7 @@ class Pagina{
 
 let paginas = []
 
-paginas.push(new Pagina("inicio","Inicio"));
+paginas.push(new Pagina("index","Inicio"));
 paginas.push(new Pagina("afiliacion","Afiliación"));
 paginas.push(new Pagina("beneficios","Beneficios"));
 paginas.push(new Pagina("capacitacion","Capacitación"));
@@ -52,14 +52,22 @@ cgtImg.src = cgtSrc
 cgtImg.alt = "logo cgt"
 nav.append(redes, cgtImg)
 
+let facebookA = document.createElement("a");
+facebookA.href = "https://www.facebook.com/appamia/"
+facebookA.target= "_blank"
 let facebookImg = document.createElement("img");
 facebookImg.src = facebookSrc
 facebookImg.alt = "logo Facebook"
+facebookA.append(facebookImg)
 
+let twitterA = document.createElement("a");
+twitterA.href = "https://twitter.com/gremioappamia"
+twitterA.target= "_blank"
 let twitterImg = document.createElement("img");
 twitterImg.src = twitterSrc
 twitterImg.alt = "logo Twitter"
-redes.append(facebookImg,twitterImg)
+twitterA.append(twitterImg)
+redes.append(facebookA,twitterA)
 
 
 //header-g

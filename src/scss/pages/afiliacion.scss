@@ -1,0 +1,124 @@
+@use "../layout/univreset";
+@use "../layout/header";
+@use "../layout/nav";
+@use "../layout/footer";
+@use "../abstracts/" as *;
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    fieldset{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        margin: 0.5rem;
+        .legajo{ 
+            display: flex;
+            margin: 0;
+            padding: 0;
+            border: none;
+            transform: translatex(-4mm);
+            label{
+                padding: 0 0 0 10px;
+            }
+        }
+    }
+    input, textarea{
+        margin: 0 0 15px 15px;
+    }
+    textarea{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 15px;
+    }
+    
+}
+
+#element-to-print{
+    max-width: 210mm;
+}
+
+.inscripcion{
+    max-height: 297mm;
+    width: 180mm;
+    // border-style: solid;
+    padding: 10mm 10mm 5mm 10mm;
+    
+
+    h1{
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        text-align: center;
+        margin: 10mm;
+        text-decoration: underline;
+    }
+
+    h2{
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+        text-align: end;
+    }
+
+    h3{
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    h4{
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9pt;
+
+    }
+    .data{ 
+        margin-top: 15mm;
+    }
+
+    .firma{
+        margin: 20mm 30mm 0 0 ;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        div{
+            display: grid;
+            place-items: center;
+            margin-bottom: 10mm;
+            align-self: end;
+            p{
+                margin: 0;
+            }
+        }
+        
+    }
+
+    hr{
+        border-top: 2px dashed;
+    }
+
+    .datos{
+        img{
+            max-width: 200px;
+        }
+        p{
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        
+    }
+
+   
+    
+}

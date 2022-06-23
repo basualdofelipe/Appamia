@@ -35,11 +35,14 @@
         display: flex;
         height: inherit;
         align-items: center;
-        img{
+        a{
             height: 50%;
             margin: 10%;
-            background-color: #fff;
-            border-radius: 30%;
-        }
+            img{
+                margin: 10%;
+                background-color: #fff;
+                border-radius: 30%;
+            }
+        } 
     }
 }
