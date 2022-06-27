@@ -22,19 +22,19 @@ class Pagina{
 
 let paginas = []
 
-paginas.push(new Pagina("index","Inicio"));
-paginas.push(new Pagina("afiliacion","Afiliación"));
-paginas.push(new Pagina("beneficios","Beneficios"));
-paginas.push(new Pagina("capacitacion","Capacitación"));
-paginas.push(new Pagina("noticias","Noticias"));
-paginas.push(new Pagina("nosotros","Nosotros"));
-paginas.push(new Pagina("contacto","Contacto"));
+paginas.push(new Pagina("index.html","Inicio"));
+paginas.push(new Pagina("afiliacion.html","Afiliación"));
+paginas.push(new Pagina("beneficios.html","Beneficios"));
+paginas.push(new Pagina("https://educacionappamia.org/aula/","Capacitación"));
+paginas.push(new Pagina("noticias.html","Noticias"));
+paginas.push(new Pagina("nosotros.html","Nosotros"));
+paginas.push(new Pagina("contacto.html","Contacto"));
 
 paginas.map( (elem) =>{
         a = document.createElement("a");
         let href = elem.href
         let text = elem.text
-        a.href = `${href}.html`
+        a.href = href
         a.innerText = text
         nav.append(a);
 })

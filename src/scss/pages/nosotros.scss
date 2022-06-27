@@ -1,0 +1,128 @@
+@use "../layout/univreset";
+@use "../layout/header";
+@use "../layout/nav";
+@use "../layout/footer";
+@use "../abstracts/" as *;
+
+
+main{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+.accordion__button {
+    display: block;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    margin: 1rem 1rem 0 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: $shade2;
+    color: #ffffff;
+    text-align: left;
+    transition: background 0.2;
+    font-size: 2rem;
+    font-family: $titulo;
+    border-radius: 1rem;
+    box-shadow: $sombra;
+}
+
+.accordion__button::after{
+    content:'\25be';
+    float: right;
+    transform: scale(1.5);
+    
+}
+
+.accordion__button--active { 
+    background: $shade3;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.accordion__button--active::after {
+    content:'\25b4';
+}
+
+.accordion__content{
+    width: inherit;
+    padding: 15px;
+    margin: 0 1rem 1rem 1rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+    padding: 0 15px;
+    font-family: $texto;
+    background: $shade4;
+    border-radius: 0 0 1rem 1rem;
+    color: $primary;
+    h3{
+        text-align: center;
+        font-family: $titulo;
+        font-size: 2rem;
+    }
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    iframe{
+        max-width: 100%;
+        border-radius: 1rem;
+        box-shadow: $sombra;
+        margin: 1rem;
+        place-self: center;
+    }
+
+    a{
+        img{
+            width: 340px;
+            border-radius: 1rem;
+            box-shadow: $sombra;
+        }
+    }
+}
+
+.sintesis p:last-child{
+    margin-bottom: 5rem;
+}
+
+.cons-directivo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    .cons-dirs{
+        grid-column-start: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex;
+            align-items: center;
+            max-width: 1/3;
+            margin: 1rem;
+            padding: 1rem;
+            img{
+                width: 60%;
+                border-radius: 50%;
+                box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.4);
+                margin: 1rem;
+            }
+            p, h4{
+                text-align: center;
+            }
+            
+        }
+    }
+}
+
+.voc-titu, .voc-sup, .com-rev{
+    
+    h3{
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+}
