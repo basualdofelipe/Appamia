@@ -19,11 +19,12 @@ const serv = document.querySelector("#serv")            //servicio que brinda
 const servEn = document.querySelector("#serv-en")       //donde brinda servicios
 const matricula = document.querySelector("#matricula")  //matricula n°
 const form = document.querySelector("#form")            //formulario
+const modal = document.querySelector("#modal")          //Formulario para imprimir
 
 
 
-form.addEventListener("submit", e => {
-    let legOsap = document.querySelector('input[name="legajo"]:checked')
+form.addEventListener("submit", (e) => {
+    let legOsap = document.querySelector('input[name="legajo"]:checked');
     let datos = {
         fname: fname.value,
         lname: lname.value,
@@ -47,10 +48,13 @@ form.addEventListener("submit", e => {
         serv: serv.value,
         servEn: servEn.value
     }
-    let datosString = JSON.stringify(datos)
-    localStorage.setItem("datos",datosString)
+    let datosString = JSON.stringify(datos);
+    localStorage.setItem("datos", datosString);
+    
 });
 
-
+form.addEventListener("submit", () => {
+    modal.showModal();
+})
 
 
