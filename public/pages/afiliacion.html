@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="../css/pages/afiliacion.css">
     <script src="../js/formulario.js" defer></script>
     <script src="../js/layout.js" defer></script>
-    <script src="../js/inscripcion.js" defer></script>
     <script src="../js/html2pdf.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Formulario</title>
 </head>
+
 <body>
     <nav id="nav-g"></nav>
     <header id="header-g"> </header>
@@ -71,86 +74,100 @@
                 <label for="serv-en">En:</label>
                 <input type="tel" id="serv-en" name="serv-en">
             </fieldset>
-                <input type="submit" value="Submit"> 
+            <input type="submit" value="Submit">
         </form>
 
         <dialog id="modal">
+            <div class="box">
+                <button id="imprimir">Imprimir</button>
+                <button id="volver">Volver</button>
+            </div>
             <div id="element-to-print">
                 <div class="inscripcion">
                     <div class="head">
-                    <h3 class="tit">A.P.P.A.M.I.A.</h3>
-                    <div class="subt">    
-                        <p>Asociación de Profesionales del Programa de atención Médica Integral y Afines</p>
-                        <p>Personería Gremial 1.383</p>
+                        <h3 class="tit">A.P.P.A.M.I.A.</h3>
+                        <div class="subt">
+                            <p>Asociación de Profesionales del Programa de atención Médica Integral y Afines</p>
+                            <p>Personería Gremial 1.383</p>
+                        </div>
+                        <h1>SOLICITUD DE AFILIACION</h1>
+                        <h2 class="afi">Afiliado Nro..............</h2>
                     </div>
-                    <h1>SOLICITUD DE AFILIACION</h1>
-                    <h2 class="afi">Afiliado Nro..............</h2>
-                </div>
-                <div class="data">
-                    <h4>Señor Secretario General</h4>
-                    <h4>de A.P.P.A.M.I.A.</h4>
-                    <div id="ext"></div>
-        
-                </div>
-                <p>Solicito mi afiliación a esa entidad que Ud. dignamente dirige.</p>
-                <div class="firma">
-                    <div>
-                        <p>................................................</p>
-                        <p>(Firma)</p>
+                    <div class="data">
+                        <h4>Señor Secretario General</h4>
+                        <h4>de A.P.P.A.M.I.A.</h4>
+                        <div id="ext"></div>
+
                     </div>
-                    <p>Mat. Nac ..................................................</p>
-                    <p>Mat. Prov .................................................</p>
-                </div>
-                <hr>
-                <div class="obra-social">
-                    <div>
-                        <h3>Sr. Director</h3>
-                        <h3>de la Obra obra social</h3>
-                        <p>S__________/__________D</p>
+                    <p>Solicito mi afiliación a esa entidad que Ud. dignamente dirige.</p>
+                    <div class="firma">
+                        <div>
+                            <p>................................................</p>
+                            <p>(Firma)</p>
+                        </div>
+                        <p>Mat. Nac ..................................................</p>
+                        <p>Mat. Prov .................................................</p>
                     </div>
-                        <p>Cumplo en dirigirme a Ud., a fin de presentar mi conformidad para que se me efectúe el descuento
-                        como afiliado a la Asociación de Profesionales de Atención Médica Integral y Obras Sociales
-                        (A.P.P.A.M.I.A.).-</p>
+                    <hr>
+                    <div class="obra-social">
+                        <div>
+                            <h3>Sr. Director</h3>
+                            <h3>de la Obra obra social</h3>
+                            <p>S__________/__________D</p>
+                        </div>
+                        <p>Cumplo en dirigirme a Ud., a fin de presentar mi conformidad para que se me efectúe el
+                            descuento
+                            como afiliado a la Asociación de Profesionales de Atención Médica Integral y Obras Sociales
+                            (A.P.P.A.M.I.A.).-</p>
                         <p>Sin otro particular, saludo a Ud. atte.-</p><br><br><br>
-                        <h2>FIRMA:........................................................................ACLARACION........................................................................</h2>
+                        <h2>FIRMA:........................................................................ACLARACION........................................................................
+                        </h2>
                         <br><br>
                         <h2>SAP / LEGAJO:.....................................................</h2>
+                    </div>
+                </div>
+                <div class="html2pdf__page-break"></div>
+                <div class="inscripcion">
+                    <div class="datos">
+                        <img src="../src/img/logo (1).png" alt="">
+                        <p>
+                            ASOCIACIÓN DE PROFESIONALES DEL PROGRAMA <br>
+                            DE ATENCIÓN MÉDICA INTEGRAL Y AFINES <br>
+                            Personería Gremial Nº 1383 <br>
+                            Av. Belgrano 3569 (1210) Capital Federal <br>
+                            Tel/Fax 4861-0009 y líneas rotativas <br>
+                            e-mail appamia@speedy.com.ar <br>
+                            Adherida a la CGT
+                        </p>
+                        <br><br>
+                    </div>
+                    <div id="ext2"></div>
+                    <div class="firma-final">
+                        <h3>
+                            <br><br><br><br><br>
+                            Firma.......................................................................................................
+                            <br><br><br>
+
+                            Sello/aclaración............................................................................................
+                            <br><br><br>
+
+                            CUIT o
+                            CUIL.................................................................................................
+                            <br><br><br>
+
+                            SAP /
+                            Legajo................................................................................................
+                            <br><br><br>
+                        </h3>
+                    </div>
+
                 </div>
             </div>
-            <div class="html2pdf__page-break"></div>
-            <div class="inscripcion">
-                <div class="datos">
-                    <img src="../src/img/logo (1).png" alt="">
-                    <p>
-                        ASOCIACIÓN DE PROFESIONALES DEL PROGRAMA <br>
-                        DE ATENCIÓN  MÉDICA INTEGRAL Y AFINES <br>
-                        Personería Gremial Nº 1383 <br>
-                        Av. Belgrano 3569 (1210) Capital Federal <br>
-                        Tel/Fax 4861-0009 y líneas rotativas <br>
-                        e-mail appamia@speedy.com.ar <br>
-                        Adherida a la CGT
-                    </p>
-                    <br><br>
-                </div>
-                <div id="ext2"></div>
-                <div class="firma-final">
-                    <h3>
-                        <br><br><br><br><br>
-                        Firma....................................................................................................... <br><br><br>
-                                        
-                        Sello/aclaración............................................................................................ <br><br><br>
-                        
-                        CUIT o CUIL................................................................................................. <br><br><br>
-                        
-                        SAP / Legajo................................................................................................ <br><br><br>
-                    </h3>
-                </div>
-                
-            </div>
-        </div>
+            
         </dialog>
 
     </main>
     <footer id="footer-g"></footer>
 </body>
+
 </html>

@@ -1,4 +1,6 @@
 const element = document.getElementById('element-to-print');
+const imprimir = document.querySelector("#imprimir")    //boton para imprimir formulario
+
 let opt = {
   margin:       1,
   filename:     'Planilla de Inscripcion.pdf',
@@ -7,9 +9,6 @@ let opt = {
   jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
 };
 
-
-
-// New Promise-based usage:
-function imprimir(){
-    html2pdf().set(opt).from(element).save();
-}
+imprimir.addEventListener("click", () =>{
+  html2pdf().set(opt).from(element).save();
+})
