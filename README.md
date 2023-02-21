@@ -1,0 +1,2 @@
+# Appamia
+Javascript vanilla project.
